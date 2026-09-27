@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coal">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Yevhen Balakov – C#/.NET Developer</title>
+  <meta name="description" content="Portfolio of Yevhen Balakov – C#/.NET Developer & Scrum Master (WPF/XAML, WinForms, EF Core, AWS). Multilingual, themeable one-page CV.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="author" content="Yevhen Balakov">
+
+  <!-- Canonical / robots -->
+  <link rel="canonical" href="https://balakov.dev/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Theme colors for light/dark -->
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0e12">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e7f4ff">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yevhen Balakov – C#/.NET Developer">
+  <meta property="og:url" content="https://balakov.dev/">
+  <meta property="og:title" content="Yevhen Balakov – C#/.NET Developer">
+  <meta property="og:description" content="C#/.NET Developer & Scrum Master. WPF/WinForms, EF Core, SQL, AWS. 7+ years building ERP/WMS & logistics solutions.">
+  <meta property="og:image" content="https://balakov.dev/assets/img/og-cover.webp">
+  <meta property="og:image:alt" content="Yevhen Balakov – .NET portfolio cover">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="uk_UA">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yevhen Balakov – C#/.NET Developer">
+  <meta name="twitter:description" content="WPF/WinForms, EF Core, SQL, AWS. ERP/WMS & logistics solutions.">
+  <meta name="twitter:image" content="https://balakov.dev/assets/img/og-cover.webp">
+
+  <!-- Icons / PWA manifest -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- (опционально для Safari pinned tab)
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#0c0e12">
+  -->
+
+  <!-- Предзагрузка обложки для соцсетей (необязательно, но ускорит первый показ превью) -->
+  <link rel="preload" as="image" href="https://balakov.dev/assets/img/og-cover.webp" fetchpriority="low">
+
+  <!-- Ставим тему максимально рано (внешний мини-скрипт, без defer) -->
+  <script src="assets/js/boot.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Yevhen Balakov",
+    "jobTitle":"C#/.NET Developer & Scrum Master",
+    "url":"https://balakov.dev/",
+    "image":"https://balakov.dev/assets/img/profile.png",
+    "email":"mailto:t0503977771@gmail.com",
+    "sameAs":[
+      "https://www.linkedin.com/in/eugene-balakov",
+      "https://github.com/balakov-yevhen"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Yevhen Balakov – C#/.NET Developer",
+    "url":"https://balakov.dev/"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- остальной HTML без изменений -->
+  <header id="top">
+    <div class="container nav">
+      <a href="#top" class="brand" id="homeLink" aria-label="Home (scroll to top)">
+        <span class="logo">
+          <img src="assets/img/profile.png" alt="Yevhen Balakov" loading="eager" decoding="async">
+        </span>
+        <span>Yevhen Balakov</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">
+        <span class="bars"><span></span></span>
+        Menu
+      </button>
+      <nav id="navLinks" class="nav-links">
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <!-- <a href="#api" data-i18n="nav.api">API Demo</a> -->
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="themeSwitch" class="theme-toggle" role="switch" aria-checked="true" title="Toggle theme">
+          <span class="track"></span>
+          <span class="thumb">
+            <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" fill="#ffffff" opacity="0.9"/>
+              <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9">
+                <line x1="12" y1="2"  x2="12" y2="6"/>
+                <line x1="12" y1="18" x2="12" y2="22"/>
+                <line x1="2"  y1="12" x2="6"  y2="12"/>
+                <line x1="18" y1="12" x2="22" y2="12"/>
+                <line x1="4.9" y1="4.9"  x2="7.7" y2="7.7"/>
+                <line x1="16.3" y1="16.3" x2="19.1" y2="19.1"/>
+                <line x1="16.3" y1="7.7"  x2="19.1" y2="4.9"/>
+                <line x1="4.9"  y1="19.1" x2="7.7"  y2="16.3"/>
+              </g>
+            </svg>
+            <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16.5 12.5A7.5 7.5 0 0 1 8 4a8 8 0 1 0 8.5 8.5z" fill="#ffffff"/>
+            </svg>
+          </span>
+        </button>
+        <div id="langPicker" class="lang"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+      <div class="pill" style="display:inline-block" data-i18n="hero.badge">.NET • ASP.NET • WPF • Microsoft SQL Server • Scrum</div>
+        <h1 class="title">
+  <span data-i18n="hero.title">C#/.NET Developer & Scrum Master</span>
+ <a class="badge-psm-link"
+     href="https://www.credly.com/badges/77610e1c-97e1-45df-befb-c95b66c35559/linked_in?t=sski1r"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="View my PSM I credential on Credly (opens in a new tab)">
+    <img class="badge-psm" src="assets/img/psmi.png"
+         alt="Professional Scrum Master I (Scrum.org)" width="36" height="36"
+         loading="lazy" decoding="async">
+  </a>
+</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">
+          I build robust desktop and back-office apps (WPF/WinForms, EF Core, SQL). 7+ years of real-world ERP/WMS and logistics solutions. English C1, German B1–B2. Based in Germany.
+        </p>
+        <div class="cta">
+  <a class="btn primary" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+  <a class="btn" href="https://www.linkedin.com/in/eugene-balakov" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn btn-resume"
+   id="btnResume"
+   href="resume-en.pdf"
+   target="_blank" rel="noopener"
+   title="Resume / CV"
+   data-i18n="cta.downloadResume">Download CV</a>
+</div>
+		</div>
+		
+      
+	  
+	  
+      <div class="avatar"><img src="assets/img/profile.png" alt="Yevhen Balakov portrait" loading="lazy"></div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projects.h">Selected Projects</h2>
+      <p class="lead" data-i18n="projects.lead">A few representative projects. Details on request.</p>
+      <div class="filters" id="projFilters"></div>
+      <div class="grid" id="projGrid"></div>
+    </section>
+<!--
+    <section id="api">
+      <h2 data-i18n="api.h">API Demo</h2>
+      <p class="lead" data-i18n="api.lead">Interactive mock of my ASP.NET endpoints: health check, currency calculator, file generation.</p>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="api.health.h">Live API status</h3>
+          <p style="margin-top:6px" data-i18n="api.health.lead">Simulated <code>/api/health</code> endpoint with latency and version.</p>
+          <div class="meta">
+            <span class="pill">Status: <strong id="healthStatus">—</strong></span>
+            <span class="pill">Version: <strong id="healthVersion">—</strong></span>
+            <span class="pill">Latency: <strong id="healthLatency">—</strong></span>
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn" id="btnHealth" data-i18n="api.health.refresh">Check status</button>
+            <span class="pill" id="healthTime">—</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="api.fx.h">Currency calculator</h3>
+          <p style="margin-top:6px" data-i18n="api.fx.lead">Mock <code>/api/calc/forex</code>: converts via mocked rates (base USD).</p>
+          <div class="meta">
+            <label class="pill">Amount&nbsp;
+              <input id="fxAmount" type="number" value="100" style="width:90px;background:transparent;border:none;color:var(--ink);font-weight:700">
+            </label>
+            <label class="pill">From&nbsp;
+              <select id="fxFrom" style="background:transparent;border:none;color:var(--ink);font-weight:700">
+                <option>USD</option><option>EUR</option><option>UAH</option><option>PLN</option><option>GBP</option><option>CHF</option>
+              </select>
+            </label>
+            <label class="pill">To&nbsp;
+              <select id="fxTo" style="background:transparent;border:none;color:var(--ink);font-weight:700">
+                <option>EUR</option><option>USD</option><option>UAH</option><option>PLN</option><option>GBP</option><option>CHF</option>
+              </select>
+            </label>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button class="btn" id="btnFx" data-i18n="api.fx.refresh">Refresh rates</button>
+            <span class="pill" id="fxAsOf">—</span>
+            <span class="pill">Result: <strong id="fxResult">—</strong></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="api.rep.h">Generate report</h3>
+          <p style="margin-top:6px" data-i18n="api.rep.lead">Mock <code>/api/report/pdf</code> and <code>/api/report/csv</code>: downloads a generated file.</p>
+          <div class="meta">
+            <label class="pill">From&nbsp;<input id="repFrom" type="date" value="2025-08-01" style="background:transparent;border:none;color:var(--ink);font-weight:700"></label>
+            <label class="pill">To&nbsp;<input id="repTo" type="date" value="2025-08-10" style="background:transparent;border:none;color:var(--ink);font-weight:700"></label>
+            <label class="pill">Currency&nbsp;
+              <select id="repCur" style="background:transparent;border:none;color:var(--ink);font-weight:700">
+                <option>EUR</option><option>USD</option><option>UAH</option><option>PLN</option>
+              </select>
+            </label>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn" id="btnCsv"><span>⬇</span>&nbsp;<span data-i18n="api.rep.csv">Download CSV</span></button>
+            <button class="btn" id="btnPdf"><span>⬇</span>&nbsp;<span data-i18n="api.rep.pdf">Download PDF</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+-->
+
+ <section id="experience">
+  <h2 data-i18n="exp.h">Experience</h2>
+  <div class="timeline" id="expTime"></div>
+</section>
+
+<section id="education">
+  <h2 data-i18n="edu.h">Education</h2>
+  <div class="timeline" id="eduTime"></div>
+
+  <!-- ↓ вместо старой карточки с certList -->
+  <div class="certs">
+    <h3 style="margin:0 0 10px" data-i18n="certs.h">Certifications & Courses</h3>
+    <div class="cert-grid" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox (один на всю страницу) -->
+<div class="lightbox" id="certLightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+  <div class="lightbox-backdrop" data-close="1"></div>
+  <figure class="lightbox-body">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <img id="lbImg" alt="">
+    <figcaption class="lb-meta">
+      <div id="lbTitle" class="lb-title"></div>
+      <a id="lbVerify" class="btn primary" target="_blank" rel="noopener">Verify</a>
+    </figcaption>
+  </figure>
+</div>
+
+    <section id="skills">
+  <h2 data-i18n="skills.h">Skills</h2>
+  <div class="card">
+    <!-- NEW: поиск -->
+    <div class="skill-search">
+      <input
+        id="skillSearch"
+        type="search"
+        placeholder="Search skills…"
+        aria-label="Search skills">
+    </div>
+
+    <div class="meta" id="skillList"></div>
+  </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact.h">Contact</h2>
+      <p class="lead" data-i18n="contact.lead">Open to .NET/WPF roles. Let’s talk.</p>
+      <div class="meta">
+        <a class="btn" href="mailto:t0503397771@gmail.com">t0503397771@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/eugene-balakov" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/balakov-yevhen" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Yevhen Balakov · <span data-i18n="footer">Built with semantic HTML, modern CSS, and a hint of JS.</span></div>
+  </footer>
+
+  <script defer src="assets/js/i18n.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>
